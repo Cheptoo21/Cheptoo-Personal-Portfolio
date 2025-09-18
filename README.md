@@ -139,3 +139,186 @@ In today's digital-first world, a compelling online presence is crucial for care
 - **AI Code Review**: Automated code quality analysis and improvement suggestions
 
 This AI-integrated approach ensures rapid development while maintaining high code quality, comprehensive testing, and thorough documentation throughout the portfolio development process.
+
+## 🚀 Setup and Run Instructions
+
+### Prerequisites
+- Python 3.9+
+- Node.js 16+
+- Git
+
+### Backend Setup (Django)
+```bash
+# Navigate to backend directory
+cd backend
+
+# Create and activate virtual environment
+python -m venv venv
+# Windows
+venv\Scripts\activate
+# macOS/Linux
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run migrations
+python manage.py migrate
+
+# Create superuser (optional)
+python manage.py createsuperuser
+
+# Start development server
+python manage.py runserver
+```
+
+### Frontend Setup (React)
+```bash
+# Navigate to frontend directory
+cd frontend
+
+# Install dependencies
+npm install
+
+# Start development server
+npm start
+```
+
+### Environment Variables
+Create a `.env` file in the backend directory:
+```
+SECRET_KEY=your-secret-key-here
+DEBUG=True
+ALLOWED_HOSTS=localhost,127.0.0.1
+```
+
+## ✨ Features Implemented
+
+### Backend Features
+- ✅ Django REST API with comprehensive models
+- ✅ Skills, Projects, Experience, Education, Contact, About models
+- ✅ Admin interface for content management
+- ✅ API filtering and pagination
+- ✅ CORS configuration for frontend integration
+- ✅ Comprehensive serializers and validation
+
+### Frontend Features
+- ✅ React TypeScript application
+- ✅ Responsive Header with smooth navigation
+- ✅ Animated Hero section with typewriter effect
+- ✅ About section with profile highlights
+- ✅ Skills section with category filtering and proficiency bars
+- ✅ Custom hooks for API data management
+- ✅ Framer Motion animations throughout
+- ✅ Mobile-first responsive design
+- ✅ Dark mode support
+
+### AI-Generated Features
+- 🤖 Complete Django model architecture
+- 🤖 REST API endpoints with filtering
+- 🤖 React component structure and TypeScript interfaces
+- 🤖 Custom hooks for data fetching
+- 🤖 Comprehensive CSS with animations
+- 🤖 Detailed documentation and comments
+- 🤖 Error handling and loading states
+
+## 🛠️ Technologies Used
+
+### Backend
+- **Django 5.2.6** - Web framework
+- **Django REST Framework 3.16.1** - API development
+- **PostgreSQL** - Database (SQLite for development)
+- **Pillow** - Image processing
+- **python-decouple** - Environment configuration
+
+### Frontend
+- **React 18** - UI library
+- **TypeScript** - Type safety
+- **Framer Motion** - Animations
+- **Axios** - HTTP client
+- **CSS3** - Styling with custom properties
+
+### Development Tools
+- **ESLint/Prettier** - Code formatting
+- **Git** - Version control
+- **VS Code** - IDE with AI assistance
+
+## 🤖 AI Usage Notes
+
+### Tools and Contexts Used
+- **Cursor AI** - Primary development assistant for code generation
+- **GitHub Copilot** - Code completion and suggestions
+- **AI Code Review** - Automated code quality analysis
+
+### AI-Generated Components
+- Django models with relationships and validation
+- REST API serializers and viewsets
+- React components with TypeScript interfaces
+- Custom hooks for data management
+- Responsive CSS with animations
+- Comprehensive documentation
+
+### Context-Aware Techniques
+- API specifications fed into AI for client generation
+- File tree analysis for import statements
+- Git diff integration for commit messages
+- Component relationship mapping for consistent patterns
+
+## 📁 Project Structure
+
+```
+Cheptoo-Personal-Portfolio/
+├── backend/                 # Django backend
+│   ├── portfolio/          # Main app
+│   │   ├── models.py       # Data models
+│   │   ├── serializers.py  # API serializers
+│   │   ├── views.py        # API views
+│   │   └── admin.py        # Admin interface
+│   ├── portfolio_backend/  # Django settings
+│   └── requirements.txt    # Python dependencies
+├── frontend/               # React frontend
+│   ├── src/
+│   │   ├── components/     # React components
+│   │   ├── services/       # API services
+│   │   ├── hooks/          # Custom hooks
+│   │   ├── types/          # TypeScript interfaces
+│   │   └── styles/         # CSS files
+│   └── package.json        # Node dependencies
+├── README.md               # Project documentation
+└── reflection.md           # AI development reflection
+```
+
+## 🚀 Deployment
+
+### Backend Deployment
+1. Set up PostgreSQL database
+2. Configure environment variables
+3. Run migrations: `python manage.py migrate`
+4. Collect static files: `python manage.py collectstatic`
+5. Deploy to Heroku/AWS/DigitalOcean
+
+### Frontend Deployment
+1. Build production bundle: `npm run build`
+2. Deploy to Netlify/Vercel/GitHub Pages
+3. Configure environment variables for API URL
+
+## 📝 Development Notes
+
+- All code includes comprehensive docstrings and comments
+- TypeScript provides full type safety
+- Responsive design works on all device sizes
+- Dark mode support included
+- Smooth animations enhance user experience
+- API includes proper error handling and validation
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests if applicable
+5. Submit a pull request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

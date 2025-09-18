@@ -1,38 +1,177 @@
+/**
+ * Main App styles
+ * 
+ * Global styles and layout for the portfolio application
+ */
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: #ffffff;
+  color: #1f2937;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-link {
-  color: #61dafb;
+.App__main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Placeholder sections */
+.App__placeholder {
+  padding: 6rem 0;
+  background: #f8fafc;
+  border-top: 1px solid #e5e7eb;
+}
+
+.App__placeholder-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.App__placeholder h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 1rem 0;
+}
+
+.App__placeholder p {
+  font-size: 1.2rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Footer */
+.App__footer {
+  background: #1f2937;
+  color: #d1d5db;
+  padding: 2rem 0;
+  border-top: 1px solid #374151;
+}
+
+.App__footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.App__footer p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.App__footer p:first-child {
+  font-weight: 600;
+  color: #f9fafb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App__placeholder {
+    padding: 4rem 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  .App__placeholder-content {
+    padding: 0 1rem;
+  }
+
+  .App__placeholder h2 {
+    font-size: 2rem;
+  }
+
+  .App__placeholder p {
+    font-size: 1.1rem;
+  }
+
+  .App__footer {
+    padding: 1.5rem 0;
+  }
+
+  .App__footer-content {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .App__placeholder h2 {
+    font-size: 1.75rem;
+  }
+
+  .App__placeholder p {
+    font-size: 1rem;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .App {
+    background: #111827;
+    color: #f9fafb;
+  }
+
+  .App__placeholder {
+    background: #1f2937;
+    border-top-color: #374151;
+  }
+
+  .App__placeholder h2 {
+    color: #f9fafb;
+  }
+
+  .App__placeholder p {
+    color: #d1d5db;
+  }
+
+  .App__footer {
+    background: #0f172a;
+    border-top-color: #1e293b;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Dark mode scrollbar */
+@media (prefers-color-scheme: dark) {
+  ::-webkit-scrollbar-track {
+    background: #1e293b;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #475569;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
   }
 }
