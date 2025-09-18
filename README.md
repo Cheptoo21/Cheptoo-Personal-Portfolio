@@ -143,11 +143,13 @@ This AI-integrated approach ensures rapid development while maintaining high cod
 ## 🚀 Setup and Run Instructions
 
 ### Prerequisites
+
 - Python 3.9+
 - Node.js 16+
 - Git
 
 ### Backend Setup (Django)
+
 ```bash
 # Navigate to backend directory
 cd backend
@@ -173,6 +175,7 @@ python manage.py runserver
 ```
 
 ### Frontend Setup (React)
+
 ```bash
 # Navigate to frontend directory
 cd frontend
@@ -185,7 +188,9 @@ npm start
 ```
 
 ### Environment Variables
+
 Create a `.env` file in the backend directory:
+
 ```
 SECRET_KEY=your-secret-key-here
 DEBUG=True
@@ -195,6 +200,7 @@ ALLOWED_HOSTS=localhost,127.0.0.1
 ## ✨ Features Implemented
 
 ### Backend Features
+
 - ✅ Django REST API with comprehensive models
 - ✅ Skills, Projects, Experience, Education, Contact, About models
 - ✅ Admin interface for content management
@@ -203,6 +209,7 @@ ALLOWED_HOSTS=localhost,127.0.0.1
 - ✅ Comprehensive serializers and validation
 
 ### Frontend Features
+
 - ✅ React TypeScript application
 - ✅ Responsive Header with smooth navigation
 - ✅ Animated Hero section with typewriter effect
@@ -214,6 +221,7 @@ ALLOWED_HOSTS=localhost,127.0.0.1
 - ✅ Dark mode support
 
 ### AI-Generated Features
+
 - 🤖 Complete Django model architecture
 - 🤖 REST API endpoints with filtering
 - 🤖 React component structure and TypeScript interfaces
@@ -225,6 +233,7 @@ ALLOWED_HOSTS=localhost,127.0.0.1
 ## 🛠️ Technologies Used
 
 ### Backend
+
 - **Django 5.2.6** - Web framework
 - **Django REST Framework 3.16.1** - API development
 - **PostgreSQL** - Database (SQLite for development)
@@ -232,6 +241,7 @@ ALLOWED_HOSTS=localhost,127.0.0.1
 - **python-decouple** - Environment configuration
 
 ### Frontend
+
 - **React 18** - UI library
 - **TypeScript** - Type safety
 - **Framer Motion** - Animations
@@ -239,6 +249,7 @@ ALLOWED_HOSTS=localhost,127.0.0.1
 - **CSS3** - Styling with custom properties
 
 ### Development Tools
+
 - **ESLint/Prettier** - Code formatting
 - **Git** - Version control
 - **VS Code** - IDE with AI assistance
@@ -246,11 +257,13 @@ ALLOWED_HOSTS=localhost,127.0.0.1
 ## 🤖 AI Usage Notes
 
 ### Tools and Contexts Used
+
 - **Cursor AI** - Primary development assistant for code generation
 - **GitHub Copilot** - Code completion and suggestions
 - **AI Code Review** - Automated code quality analysis
 
 ### AI-Generated Components
+
 - Django models with relationships and validation
 - REST API serializers and viewsets
 - React components with TypeScript interfaces
@@ -259,6 +272,7 @@ ALLOWED_HOSTS=localhost,127.0.0.1
 - Comprehensive documentation
 
 ### Context-Aware Techniques
+
 - API specifications fed into AI for client generation
 - File tree analysis for import statements
 - Git diff integration for commit messages
@@ -291,6 +305,7 @@ Cheptoo-Personal-Portfolio/
 ## 🚀 Deployment
 
 ### Backend Deployment
+
 1. Set up PostgreSQL database
 2. Configure environment variables
 3. Run migrations: `python manage.py migrate`
@@ -298,6 +313,7 @@ Cheptoo-Personal-Portfolio/
 5. Deploy to Heroku/AWS/DigitalOcean
 
 ### Frontend Deployment
+
 1. Build production bundle: `npm run build`
 2. Deploy to Netlify/Vercel/GitHub Pages
 3. Configure environment variables for API URL
