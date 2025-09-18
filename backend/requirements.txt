@@ -1,0 +1,30 @@
+# Django Portfolio Backend Requirements
+# Generated with AI assistance for comprehensive portfolio management
+
+# Core Django Framework
+Django==5.2.6
+djangorestframework==3.16.1
+
+# Database and CORS
+django-cors-headers==4.9.0
+
+# Image Processing
+Pillow==11.3.0
+
+# Environment Configuration
+python-decouple==3.8
+
+# Development Dependencies
+pytest==8.3.4
+pytest-django==4.9.0
+pytest-cov==6.0.0
+
+# Production Dependencies (optional)
+gunicorn==23.0.0
+whitenoise==6.8.2
+
+# Database (PostgreSQL for production)
+psycopg2-binary==2.9.10
+
+# API Documentation
+drf-spectacular==0.28.0
